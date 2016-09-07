@@ -21,14 +21,14 @@ public class KafkaProducer {
 		 * user while preparing the message for the transmission from the 
 		 * producer to the broker.
 		 */
-		props.put("serializer.class", "kafka.serializer.StringEncoding");
+		props.put("serializer.class", "kafka.serializer.StringEncoder");
 		/*
 		 * This property instructs the Kafka broker to send an acknowledgement
 		 * to the producer when a message is received.
 		 * the value 1 means the producer receives an acknowledgement once the lead replica
 		 * has received the data
 		 */
-		props.put("request.required.acks", 1);
+		props.put("request.required.acks", "1");
 		
 		ProducerConfig config = new ProducerConfig(props);
 		producer = new Producer<String, String>(config);
