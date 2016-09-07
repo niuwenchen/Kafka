@@ -61,7 +61,7 @@ public class SimpleHLConsumer {
 	
 	public static void main(String[] args) {
 		String zookeeper = "192.168.222.128:2181";
-		String groupId = "test-consumer-group";
+		String groupId = "testgroup";
 		String topic = "kafkatopic";
 		SimpleHLConsumer simpleHlConsumer = new SimpleHLConsumer(zookeeper, groupId, topic);
 		simpleHlConsumer.testConsumer();
