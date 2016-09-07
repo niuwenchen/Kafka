@@ -1,5 +1,8 @@
 package com.jackniu.consumer;
 
+/*
+ * 单线程接受消息
+ * */
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
